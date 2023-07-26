@@ -91,7 +91,6 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        eslint = {},
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
       },
@@ -108,7 +107,7 @@ return {
       },
     },
   },
-
+  --
   -- add tsserver and setup with typescript.nvim instead of lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -126,6 +125,7 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
+        eslint = {},
         -- tsserver will be automatically installed with mason and loaded with lspconfig
         tsserver = {},
       },
